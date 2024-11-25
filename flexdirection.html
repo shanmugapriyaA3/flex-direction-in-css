@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+</head>
+<body>
+    <h2>flex</h2>
+   <div class="container">
+    <h1>one</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+   </div> 
+   <h2>column</h2>
+   <div class="container2">
+    <h1>one</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+   </div> 
+   <h2>column reverse</h2>
+   <div class="container3">
+    <h1>one</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+   </div> 
+   <h2>row reverse</h2>
+   <div class="container4">
+    <h1>one</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+   </div> 
+</body>
+<style>
+    .container{
+        background-color: aqua;
+        margin: 2px;
+        display: flex;
+    }
+    h1{
+        background-color: azure;
+        padding: 2px;
+        margin: 10px;
+        font-size: 50px;
+        width: 150px;
+        text-align: center;
+        line-height: 75px;
+        
+    }
+    .container2{
+        background-color: aqua;
+        margin: 2px;
+        display: flex;
+        flex-direction:column;
+    }
+    .container3{
+        background-color: aqua;
+        margin: 2px;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .container4{
+        background-color: aqua;
+        margin: 2px;
+        display: flex;
+        flex-direction:row-reverse;
+    }
+
+
+</style>
+</html>
